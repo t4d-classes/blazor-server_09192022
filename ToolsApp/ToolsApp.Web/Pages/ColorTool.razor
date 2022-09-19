@@ -9,23 +9,14 @@
   }
 </ul>
 
-<form>
-  <label>
-    Name:
-    <input type="text" @bind="@colorForm.Name" />
-  </label>
-  <label>
-    Hexcode:
-    <input type="text" @bind="@colorForm.HexCode" />
-  </label>
-  <button type="button" @onclick="@AddColor">Add Color</button>
-</form>
+<ColorForm ButtonText="Add Color" OnSubmitColor="@AddColor"></ColorForm>
+
+
 
 @code {
 
   private string colorToolHeaderText { get; set; } = "Color Tool!!!";
 
-  private ColorFormModel colorForm = new();
 
   public List<IColor> Colors { get; set; } = new List<IColor>() {
     new Color() { Id = 1, Name = "red", HexCode = "ff0000" },
@@ -33,11 +24,11 @@
     new Color() { Id = 3, Name = "yellow", HexCode = "00ffff" },
   };
 
-  public void AddColor() {
+  public void AddColor(INewColor newColor) {
     var color = new Color()
       {
-        Name = colorForm.Name,
-        HexCode = colorForm.HexCode,
+        Name = newColor.Name,
+        HexCode = newColor.HexCode,
       };
 
     color.Id = Colors.Any() ? Colors.Max(c => c.Id) + 1 : 1;
@@ -46,10 +37,7 @@
   }
 
 
-  class ColorFormModel {
-    public string Name { get; set; }
-    public string HexCode { get; set; }
-  }
+
 
 
 
