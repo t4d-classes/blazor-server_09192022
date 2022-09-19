@@ -1,40 +1,24 @@
-﻿@page "/car-tool"
+﻿@page "/color-tool"
+@using ToolsApp.Core.Interfaces.Models
+@using ToolsApp.Models
 
 <header>
-  <h3>Car Tool</h3>
+  <h3>Color Tool</h3>
 </header>
 
-<table>
-  <thead>
-    <tr>
-      <td>Id</td>
-      <td>Make</td>
-      <td>Model</td>
-      <td>Year</td>
-      <td>Color</td>
-      <td>Price</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Ford</td>
-      <td>Fusion Hybrid</td>
-      <td>2020</td>
-      <td>blue</td>
-      <td>45000</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Tesla</td>
-      <td>S</td>
-      <td>2021</td>
-      <td>red</td>
-      <td>125000</td>
-    </tr>
-  </tbody>
-</table>
+<ul>
+  @foreach(var color in Colors)
+  {
+    <li>@color.Name - @color.HexCode</li>
+  }
+</ul>
 
 @code {
+
+  public IEnumerable<IColor> Colors { get; set; } = new List<IColor>() {
+    new Color() { Id = 1, Name = "red", HexCode = "ff0000" },
+    new Color() { Id = 2, Name = "blue", HexCode = "0000ff" },
+    new Color() { Id = 3, Name = "yellow", HexCode = "00ffff" },
+  };
 
 }
