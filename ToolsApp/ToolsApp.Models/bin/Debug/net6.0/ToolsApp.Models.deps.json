@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ToolsApp.Models/1.0.0": {
+        "dependencies": {
+          "ToolsApp.Core": "1.0.0"
+        },
+        "runtime": {
+          "ToolsApp.Models.dll": {}
+        }
+      },
+      "ToolsApp.Core/1.0.0": {
+        "runtime": {
+          "ToolsApp.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ToolsApp.Models/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToolsApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

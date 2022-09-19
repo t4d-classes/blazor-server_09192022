@@ -1,0 +1,12 @@
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\bin\Debug\net6.0\ToolsApp.Core.deps.json
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\bin\Debug\net6.0\ToolsApp.Core.dll
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\bin\Debug\net6.0\ToolsApp.Core.pdb
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.csproj.AssemblyReference.cache
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.AssemblyInfoInputs.cache
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.AssemblyInfo.cs
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.dll
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\refint\ToolsApp.Core.dll
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ToolsApp.Core.pdb
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Core\obj\Debug\net6.0\ref\ToolsApp.Core.dll

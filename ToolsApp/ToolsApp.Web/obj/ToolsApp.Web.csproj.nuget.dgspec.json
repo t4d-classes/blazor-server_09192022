@@ -1,0 +1,323 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Web\\ToolsApp.Web.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Components\\ToolsApp.Components.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Components\\ToolsApp.Components.csproj",
+        "projectName": "ToolsApp.Components",
+        "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Components\\ToolsApp.Components.csproj",
+        "packagesPath": "C:\\Users\\EricGreene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Components\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EricGreene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj"
+              },
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj",
+        "projectName": "ToolsApp.Core",
+        "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj",
+        "packagesPath": "C:\\Users\\EricGreene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EricGreene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Data\\ToolsApp.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Data\\ToolsApp.Data.csproj",
+        "projectName": "ToolsApp.Data",
+        "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Data\\ToolsApp.Data.csproj",
+        "packagesPath": "C:\\Users\\EricGreene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EricGreene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj"
+              },
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj",
+        "projectName": "ToolsApp.Models",
+        "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj",
+        "packagesPath": "C:\\Users\\EricGreene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EricGreene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Web\\ToolsApp.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Web\\ToolsApp.Web.csproj",
+        "projectName": "ToolsApp.Web",
+        "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Web\\ToolsApp.Web.csproj",
+        "packagesPath": "C:\\Users\\EricGreene\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\EricGreene\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Components\\ToolsApp.Components.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Components\\ToolsApp.Components.csproj"
+              },
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Core\\ToolsApp.Core.csproj"
+              },
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Data\\ToolsApp.Data.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Data\\ToolsApp.Data.csproj"
+              },
+              "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj": {
+                "projectPath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\ToolsApp\\ToolsApp.Models\\ToolsApp.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
