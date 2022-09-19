@@ -16,25 +16,23 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>Ford</td>
-      <td>Fusion Hybrid</td>
-      <td>2020</td>
-      <td>blue</td>
-      <td>45000</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Tesla</td>
-      <td>S</td>
-      <td>2021</td>
-      <td>red</td>
-      <td>125000</td>
-    </tr>
+    @foreach(var car in Cars) {
+      <tr>
+        <td>@car.Id</td>
+        <td>@car.Make</td>
+        <td>@car.Model</td>
+        <td>@car.Year</td>
+        <td>@car.Color</td>
+        <td>@car.Price</td>
+      </tr>
+    }
   </tbody>
 </table>
 
 @code {
+
+  public IEnumerable<ICar> Cars { get; set; } = new List<ICar>() {
+    new Car() { Id = 1, Make = "Ford", Model = "Fusion Hybrid", Year = 2020, Color = "red", Price = 45000 }
+  };
 
 }

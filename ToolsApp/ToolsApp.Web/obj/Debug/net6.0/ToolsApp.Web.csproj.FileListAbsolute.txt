@@ -43,3 +43,4 @@ C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Web\obj\Debug\n
 C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Web\obj\Debug\net6.0\ToolsApp.Web.pdb
 C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Web\obj\Debug\net6.0\ToolsApp.Web.genruntimeconfig.cache
 C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Web\obj\Debug\net6.0\ref\ToolsApp.Web.dll
+C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Web\obj\Debug\net6.0\scopedcss\Pages\ColorTool.razor.rz.scp.css
