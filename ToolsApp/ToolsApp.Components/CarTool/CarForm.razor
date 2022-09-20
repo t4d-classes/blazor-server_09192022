@@ -1,0 +1,56 @@
+﻿<form>
+  <label>
+    Make:
+    <input type="text" @bind="@carForm.Make" />
+  </label>
+  <label>
+    Model:
+    <input type="text" @bind="@carForm.Model" />
+  </label>
+  <label>
+    Year:
+    <input type="number" @bind="@carForm.Year" />
+  </label>
+  <label>
+    Color:
+    <input type="text" @bind="@carForm.Color" />
+  </label>
+  <label>
+    Price:
+    <input type="number" @bind="@carForm.Price" />
+  </label>
+  <button type="button" @onclick="@submitCar">@ButtonText</button>
+</form>
+
+@code {
+
+  private CarFormModel carForm = new();
+
+  [Parameter]
+  public string ButtonText { get; set; } = "Submit Car";
+
+  [Parameter]
+  public EventCallback<INewCar> OnSubmitCar { get; set; }
+
+  private async void submitCar() {
+    await OnSubmitCar.InvokeAsync(new NewCar()
+      {
+        Make = carForm.Make,
+        Model = carForm.Model,
+        Year = carForm.Year,
+        Color = carForm.Color,
+        Price = carForm.Price,
+      });
+
+    carForm = new();
+  }
+
+  class CarFormModel
+  {
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public int Year { get; set; }
+    public string Color { get; set; }
+    public decimal Price { get; set; }
+  }
+}

@@ -1,14 +1,7 @@
 ﻿@page "/color-tool"
 
 <ToolHeader HeaderText="@colorToolHeaderText"></ToolHeader>
-
-<ul>
-  @foreach(var color in Colors)
-  {
-    <li>@color.Name - @color.HexCode</li>
-  }
-</ul>
-
+<ColorList Colors="@colors"></ColorList>
 <ColorForm ButtonText="Add Color" OnSubmitColor="@AddColor"></ColorForm>
 
 
@@ -18,7 +11,7 @@
   private string colorToolHeaderText { get; set; } = "Color Tool!!!";
 
 
-  public List<IColor> Colors { get; set; } = new List<IColor>() {
+  public List<IColor> colors { get; set; } = new List<IColor>() {
     new Color() { Id = 1, Name = "red", HexCode = "ff0000" },
     new Color() { Id = 2, Name = "blue", HexCode = "0000ff" },
     new Color() { Id = 3, Name = "yellow", HexCode = "00ffff" },
@@ -31,14 +24,9 @@
         HexCode = newColor.HexCode,
       };
 
-    color.Id = Colors.Any() ? Colors.Max(c => c.Id) + 1 : 1;
+    color.Id = colors.Any() ? colors.Max(c => c.Id) + 1 : 1;
 
-    Colors.Add(color);
+    colors.Add(color);
   }
-
-
-
-
-
 
 }

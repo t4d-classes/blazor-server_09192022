@@ -1,0 +1,31 @@
+<table>
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Make</td>
+      <td>Model</td>
+      <td>Year</td>
+      <td>Color</td>
+      <td>Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach(var car in Cars) {
+      <tr>
+        <td>@car.Id</td>
+        <td>@car.Make</td>
+        <td>@car.Model</td>
+        <td>@car.Year</td>
+        <td>@car.Color</td>
+        <td>@car.Price</td>
+      </tr>
+    }
+  </tbody>
+</table>
+
+@code {
+
+  [Parameter]
+  public IEnumerable<ICar> Cars { get; set; } = new List<ICar>();
+
+}
