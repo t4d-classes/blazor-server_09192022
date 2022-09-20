@@ -1,13 +1,31 @@
 <ul>
   @foreach(var color in Colors)
   {
-    <li>@color.Name - @color.HexCode</li>
+    <li>
+      @color.Name - @color.HexCode
+      <button @onclick="@(() => SelectMe(color.Id))">Select Me</button>
+    </li>
   }
 </ul>
 
+<div>
+  <button @onclick="@(() => SelectMe(-1))">Clear Selection</button>
+</div>
+
+<div>
+  Selected Color: @(SelectedColor is null ? "None Selected" : SelectedColor.Name)
+</div>
+
 @code {
+
+  private IColor SelectedColor { get; set; } = null;
 
   [Parameter]
   public IEnumerable<IColor> Colors { get; set; } = new List<IColor>();
+
+  private void SelectMe(int colorId)
+  {
+    SelectedColor = Colors.FirstOrDefault(c => c.Id == colorId);
+  }
 
 }
