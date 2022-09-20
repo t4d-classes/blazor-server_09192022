@@ -1,11 +1,15 @@
 ﻿@page "/car-tool"
 
 <ToolHeader HeaderText="Car Tool"></ToolHeader>
-<CarTable Cars="@Cars" OnDeleteCar="@DeleteCar"></CarTable>
+<CarTable Cars="@Cars" EditCarId="@EditCarId"
+          OnEditCar="@EditCar" OnDeleteCar="@DeleteCar"
+          OnSaveCar="@SaveCar" OnCancelCar="@CancelCar"></CarTable>
 <CarForm ButtonText="Add Car" OnSubmitCar="@AddCar"></CarForm>
 
 
 @code {
+
+  private int EditCarId { get; set; } = -1;
 
   private List<ICar> Cars { get; set; } = new List<ICar>() {
     new Car() {
@@ -17,6 +21,16 @@
       Year = 2021, Color = "blue", Price = 120000
     },
   };
+
+  private void EditCar(int carId)
+  {
+    EditCarId = carId;
+  }
+
+  private void CancelCar()
+  {
+    EditCarId = -1;
+  }
 
   private void AddCar(INewCar newCar) {
     var car = new Car()
@@ -31,11 +45,20 @@
     car.Id = Cars.Any() ? Cars.Max(c => c.Id) + 1 : 1;
 
     Cars.Add(car);
+    EditCarId = -1;
+  }
+
+  private void SaveCar(ICar car)
+  {
+    int carIndex = Cars.FindIndex(c => c.Id == car.Id);
+    Cars[carIndex] = car;
+    EditCarId = -1;
   }
 
   private void DeleteCar(int carId)
   {
     Cars.Remove(Cars.Find(car => car.Id == carId));
+    EditCarId = -1;
   }
 
 }

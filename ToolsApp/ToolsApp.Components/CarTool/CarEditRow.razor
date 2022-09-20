@@ -1,0 +1,61 @@
+<tr>
+  <td>@Car.Id</td>
+  <td><input type="text" @bind="@CarForm.Make" /></td>
+  <td><input type="text" @bind="@CarForm.Model" /></td>
+  <td><input type="number" @bind="@CarForm.Year" /></td>
+  <td><input type="text" @bind="@CarForm.Color" /></td>
+  <td><input type="number" @bind="@CarForm.Price" /></td>
+  <td>
+    <button @onclick="@SaveCar">Save</button>
+    <button @onclick="@(async () => await OnCancelCar.InvokeAsync())">Cancel</button>
+  </td>
+</tr>
+
+@code {
+  
+  private CarFormModel CarForm;  
+  
+  // treat this as readonly
+  [Parameter]
+  public ICar Car { get; set; }
+  
+  [Parameter]
+  public EventCallback<ICar> OnSaveCar { get; set; }
+  
+  [Parameter]
+  public EventCallback OnCancelCar { get; set; }
+
+  protected override void OnInitialized()
+  {
+    CarForm = new()
+    {
+      Make = Car.Make,
+      Model = Car.Model,
+      Year = Car.Year,
+      Color = Car.Color,
+      Price = Car.Price,
+    };
+  }
+
+  private async void SaveCar()
+  {
+    await OnSaveCar.InvokeAsync(new Car()
+    {
+      Id = Car.Id,
+      Make = CarForm.Make,
+      Model = CarForm.Model,
+      Year = CarForm.Year,
+      Color = CarForm.Color,
+      Price = CarForm.Price,      
+    });
+  }
+  
+  class CarFormModel
+  {
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public int Year { get; set; }
+    public string Color { get; set; }
+    public decimal Price { get; set; }
+  }
+}

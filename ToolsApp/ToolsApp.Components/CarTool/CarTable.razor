@@ -19,7 +19,14 @@
   }
   @foreach (var car in Cars)
   {
-    <CarViewRow Car="@car" OnDeleteCar="@DeleteCar"></CarViewRow>
+    @if (car.Id == EditCarId)
+    {
+      <CarEditRow Car="@car" OnSaveCar="@OnSaveCar" OnCancelCar="@OnCancelCar"></CarEditRow>
+    }
+    else
+    {
+      <CarViewRow Car="@car" OnEditCar="@OnEditCar" OnDeleteCar="@OnDeleteCar"></CarViewRow>
+    }
   }
   </tbody>
 </table>
@@ -28,13 +35,22 @@
 
   [Parameter]
   public IEnumerable<ICar> Cars { get; set; } = new List<ICar>();
+
+  [Parameter]
+  public int EditCarId { get; set; } = -1;
+  
+
+  [Parameter]
+  public EventCallback<int> OnEditCar { get; set; }
   
   [Parameter]
   public EventCallback<int> OnDeleteCar { get; set; }
 
-  private async void DeleteCar(int carId)
-  {
-    await OnDeleteCar.InvokeAsync(carId);
-  }
+  [Parameter]
+  public EventCallback<ICar> OnSaveCar { get; set; }
+  
+  [Parameter]
+  public EventCallback OnCancelCar { get; set; }
+  
 
 }
