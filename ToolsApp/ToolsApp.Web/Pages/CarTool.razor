@@ -1,16 +1,13 @@
 ﻿@page "/car-tool"
 
 <ToolHeader HeaderText="Car Tool"></ToolHeader>
-
-<CarTable Cars="@cars"></CarTable>
-
-<CarForm ButtonText="Add Car" OnSubmitCar="AddCar"></CarForm>
-
+<CarTable Cars="@Cars" OnDeleteCar="@DeleteCar"></CarTable>
+<CarForm ButtonText="Add Car" OnSubmitCar="@AddCar"></CarForm>
 
 
 @code {
 
-  private List<ICar> cars { get; set; } = new List<ICar>() {
+  private List<ICar> Cars { get; set; } = new List<ICar>() {
     new Car() {
       Id = 1, Make = "Ford", Model = "Fusion Hybrid",
       Year = 2020, Color = "red", Price = 45000
@@ -21,7 +18,7 @@
     },
   };
 
-  public void AddCar(INewCar newCar) {
+  private void AddCar(INewCar newCar) {
     var car = new Car()
       {
         Make = newCar.Make,
@@ -31,9 +28,14 @@
         Price = newCar.Price,
       };
 
-    car.Id = cars.Any() ? cars.Max(c => c.Id) + 1 : 1;
+    car.Id = Cars.Any() ? Cars.Max(c => c.Id) + 1 : 1;
 
-    cars.Add(car);
-  }  
+    Cars.Add(car);
+  }
+
+  private void DeleteCar(int carId)
+  {
+    Cars.Remove(Cars.Find(car => car.Id == carId));
+  }
 
 }
