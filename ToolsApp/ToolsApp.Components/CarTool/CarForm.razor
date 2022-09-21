@@ -1,26 +1,37 @@
-﻿<form>
+<EditForm Model="@carForm" OnValidSubmit="@doSubmitForm">
+
+  <DataAnnotationsValidator />
+  <ValidationSummary />
+
   <label>
     Make:
-    <input type="text" @bind="@carForm.Make" />
+    <InputText @bind-Value="carForm.Make" />
   </label>
+
   <label>
     Model:
-    <input type="text" @bind="@carForm.Model" />
+    <InputText @bind-Value="carForm.Model" />
   </label>
+
   <label>
     Year:
-    <input type="number" @bind="@carForm.Year" />
+    <InputNumber @bind-Value="carForm.Year" />
   </label>
+
   <label>
     Color:
-    <input type="text" @bind="@carForm.Color" />
+    <InputText @bind-Value="carForm.Color" />
   </label>
+
   <label>
     Price:
-    <input type="number" @bind="@carForm.Price" />
+    <InputNumber @bind-Value="carForm.Price" />
   </label>
-  <button type="button" @onclick="@submitCar">@ButtonText</button>
-</form>
+
+  <button>@ButtonText</button>
+
+</EditForm>
+
 
 @code {
 
@@ -30,27 +41,38 @@
   public string ButtonText { get; set; } = "Submit Car";
 
   [Parameter]
-  public EventCallback<INewCar> OnSubmitCar { get; set; }
+  public EventCallback<NewCar> OnSubmitForm { get; set; }
 
-  private async void submitCar() {
-    await OnSubmitCar.InvokeAsync(new NewCar()
-      {
-        Make = carForm.Make,
-        Model = carForm.Model,
-        Year = carForm.Year,
-        Color = carForm.Color,
-        Price = carForm.Price,
-      });
+
+  private async Task doSubmitForm() {
+
+    await OnSubmitForm.InvokeAsync(new NewCar {
+      Make=carForm.Make,
+      Model=carForm.Model,
+      Year=carForm.Year,
+      Color=carForm.Color,
+      Price=carForm.Price,
+    });
 
     carForm = new();
   }
 
-  class CarFormModel
+  public class CarFormModel
   {
-    public string Make { get; set; }
-    public string Model { get; set; }
-    public int Year { get; set; }
-    public string Color { get; set; }
-    public decimal Price { get; set; }
+    [Required]
+    public string Make { get; set; } = "";
+
+    [Required]
+    public string Model { get; set; } = "";
+  
+    [Required]
+    [MinCarYear]
+    public int Year { get; set; } = 1900;
+
+    [Required]
+    public string Color { get; set; } = "";
+
+    [Required]
+    public decimal Price { get; set; } = 0;
   }
 }

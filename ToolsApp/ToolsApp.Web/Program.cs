@@ -13,6 +13,8 @@ builder.Services.AddSingleton<WeatherForecastService>();
 builder.Services.AddSingleton<DataContext>();
 builder.Services.AddScoped<IColorsData, ColorsSqlServerData>();
 // builder.Services.AddScoped<IColorsData, ColorsInMemoryData>();
+builder.Services.AddScoped<ICarsData, CarsSqlServerData>();
+// builder.Services.AddScoped<ICarsData, CarsInMemoryData>();
 
 var app = builder.Build();
 
