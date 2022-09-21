@@ -13,4 +13,8 @@
     <ProjectReference Include="..\ToolsApp.Models\ToolsApp.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Telerik.UI.for.Blazor" Version="3.6.0" />
+  </ItemGroup>
+
 </Project>

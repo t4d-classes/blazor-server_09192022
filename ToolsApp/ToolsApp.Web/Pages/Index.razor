@@ -7,3 +7,21 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<button @onclick="@ShowModal">Show Modal</button>
+
+<Modal @bind-DialogVisible="@DialogVisible">
+  Hello!
+</Modal>
+
+@code {
+
+  private bool DialogVisible { get; set; } = false;
+
+  private void ShowModal()
+  {
+    DialogVisible = true;
+  }
+
+
+}

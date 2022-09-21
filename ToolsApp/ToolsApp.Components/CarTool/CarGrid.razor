@@ -1,0 +1,46 @@
+<TelerikGrid Data="@Cars" EditMode="@GridEditMode.Inline" OnDelete="@DeleteCarHandler" OnUpdate="@UpdateCarsHandler">
+  <GridColumns>
+    <GridColumn Field="Id" Title="Id"/>
+    <GridColumn Field="Make" Title="Make"/>
+    <GridColumn Field="Model" Title="Model"/>
+    <GridColumn Field="Year" Title="Year"/>
+    <GridColumn Field="Color" Title="Color"/>
+    <GridColumn Field="Price" DisplayFormat="{0:C2}"/>
+    <GridCommandColumn>
+      <GridCommandButton Command="Edit" Icon="edit">Edit</GridCommandButton>
+      <GridCommandButton Command="Delete" Icon="delete" ShowInEdit="false">Delete</GridCommandButton>
+      <GridCommandButton Command="Save" Icon="save" ShowInEdit="true">Save</GridCommandButton>
+      <GridCommandButton Command="Cancel" Icon="cancel" ShowInEdit="true">Cancel</GridCommandButton>
+    </GridCommandColumn>
+  </GridColumns>
+</TelerikGrid>
+
+@code {
+
+  [Parameter]
+  public IEnumerable<ICar> Cars { get; set; } = new List<ICar>();
+
+  [Parameter]
+  public EventCallback<int> OnDeleteCar { get; set; }
+
+  [Parameter]
+  public EventCallback<ICar> OnSaveCar { get; set; }
+
+  private async Task UpdateCarsHandler(GridCommandEventArgs args)
+  {
+    ICar updatedCar = args.Item as ICar;
+    if (updatedCar is not null)
+    {
+      await OnSaveCar.InvokeAsync(updatedCar);
+    }
+  }
+
+  private async Task DeleteCarHandler(GridCommandEventArgs args)
+  {
+    ICar deletedCar = args.Item as ICar;
+    if (deletedCar is not null)
+    {
+      await OnDeleteCar.InvokeAsync(deletedCar.Id);
+    }
+  }
+}

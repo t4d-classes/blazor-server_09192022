@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a1284ad-e1e4-407e-9634-b3345b132ccf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarGrid.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Components/Shared/Modal.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/TelerikCarTool.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Web/Shared/TelerikLayout.razor" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ToolsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ToolsApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarForm.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarForm.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarForm.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarForm.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/ToolsApp.Components.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/ToolsApp.Components.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/CarTool.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/CarTool.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/ToolsApp.Web.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/ToolsApp.Web.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/_Imports.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +88,7 @@
       <workItem from="1663767419695" duration="29000" />
       <workItem from="1663767473810" duration="7432000" />
       <workItem from="1663791824614" duration="682000" />
+      <workItem from="1663796717676" duration="2294000" />
     </task>
     <servers />
   </component>

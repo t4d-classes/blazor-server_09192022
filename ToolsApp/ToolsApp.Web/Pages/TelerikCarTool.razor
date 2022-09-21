@@ -1,15 +1,12 @@
-@page "/car-tool"
+@page "/car-grid"
 
 @using Core.Interfaces.Data
-@using Core.Interfaces.Models
 
 @inject ICarsData carsData
 
 <ToolHeader HeaderText="Car Tool" />
 
-<CarTable Cars="@cars" EditCarId="@editCarId"
-  OnEditCar="EditCar" OnDeleteCar="DeleteCar"
-  OnSaveCar="SaveCar" OnCancelCar="CancelCar" />
+<CarGrid Cars="@cars" OnDeleteCar="DeleteCar" OnSaveCar="SaveCar"  />
 
 <CarForm ButtonText="Add Car" OnSubmitForm="AddCar" />
 
@@ -17,40 +14,25 @@
 
   private IEnumerable<ICar> cars = new List<ICar>();
 
-  private int editCarId = -1;
-
   protected override async Task OnInitializedAsync()
   {
     cars = await carsData.All();
   }
 
-  private void EditCar(int carId)
-  {
-    editCarId = carId;
-  }
-
-  private void CancelCar()
-  {
-    editCarId = -1;
-  }
-
   private async Task AddCar(INewCar car) {
     await carsData.Append(car);
     cars = await carsData.All();
-    editCarId = -1;
   }
 
   private async Task SaveCar(ICar car)
   {
     await carsData.Replace(car);
     cars = await carsData.All();
-    editCarId = -1;
   }
 
   private async Task DeleteCar(int carId) {
     await carsData.Remove(carId);
     cars = await carsData.All();
-    editCarId = -1;
   }
 
 }

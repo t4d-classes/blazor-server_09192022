@@ -1,0 +1,26 @@
+@using Telerik.Blazor.Components
+<TelerikDialog @ref="DialogRef" @bind-Visible="DialogVisible">
+  <DialogContent>
+    @ChildContent
+  </DialogContent>
+  <DialogButtons>
+    <TelerikButton OnClick="@(async () => await DialogVisibleChanged.InvokeAsync(false))">
+      Close
+    </TelerikButton>
+  </DialogButtons>
+</TelerikDialog>
+
+@code {
+    
+  TelerikDialog DialogRef;
+    
+  [Parameter]
+  public bool DialogVisible { get; set; }
+
+  [Parameter]
+  public EventCallback<bool> DialogVisibleChanged { get; set; }
+    
+  [Parameter]
+  public RenderFragment ChildContent { get; set; }    
+    
+}
