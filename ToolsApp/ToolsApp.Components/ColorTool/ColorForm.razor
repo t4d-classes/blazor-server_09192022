@@ -1,14 +1,23 @@
-﻿<form>
+﻿<EditForm Model="@colorForm" OnValidSubmit="@submitColor">
+
+  <DataAnnotationsValidator />
+
+  <ValidationSummary />
+
   <label>
     Name:
-    <input type="text" @bind="@colorForm.Name" />
+    <InputText @bind-Value="colorForm.Name" />
   </label>
+
   <label>
     Hexcode:
     <input type="text" @bind="@colorForm.HexCode" />
+    <ValidationMessage For="@(() => colorForm.HexCode)" />
   </label>
-  <button type="button" @onclick="@submitColor">@ButtonText</button>
-</form>
+
+  <button>@ButtonText</button>
+
+</EditForm>
 
 @code {
 
@@ -32,7 +41,13 @@
 
   class ColorFormModel
   {
+    [Required]
+    [MinLength(3)]
     public string Name { get; set; }
+
+    [Required]
+    // [RegularExpression(@"^[0-9a-fA-F]{6}$", ErrorMessage = "HexCode is RRGGBB")]
+    [HexColorValidator(6)]
     public string HexCode { get; set; }
   }
 }
