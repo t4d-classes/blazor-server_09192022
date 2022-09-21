@@ -10,7 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-builder.Services.AddScoped<IColorsData, ColorsInMemoryData>();
+builder.Services.AddSingleton<DataContext>();
+builder.Services.AddScoped<IColorsData, ColorsSqlServerData>();
+// builder.Services.AddScoped<IColorsData, ColorsInMemoryData>();
 
 var app = builder.Build();
 
