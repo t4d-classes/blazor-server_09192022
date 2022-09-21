@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a1284ad-e1e4-407e-9634-b3345b132ccf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarEditRow.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Core/Interfaces/Data/IColorsData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Data/Models/Color.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ToolsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ToolsApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarTable.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarTable.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarViewRow.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/CarTool/CarViewRow.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/CarTool.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/CarTool.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.metadata.v5.1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.metadata.v5.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.projects.v5.1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.projects.v5.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ToolsApp/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ToolsApp/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Data/Class1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Data/ColorsInMemoryData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/ColorTool.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/ColorTool.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "inlay.hints",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -74,6 +78,8 @@
       <option name="presentableId" value="Default" />
       <updated>1663680892167</updated>
       <workItem from="1663680892169" duration="11117000" />
+      <workItem from="1663767419695" duration="29000" />
+      <workItem from="1663767473810" duration="3267000" />
     </task>
     <servers />
   </component>
