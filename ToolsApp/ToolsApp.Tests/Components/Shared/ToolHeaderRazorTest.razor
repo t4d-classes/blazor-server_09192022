@@ -1,0 +1,19 @@
+@code {
+
+  [Fact]
+  public void ToolHeaderComponentRendersCorrectly()
+  {
+    // Arrange
+    using var ctx = new TestContext();
+
+    // Act
+    var cut = ctx.Render(@<ToolHeader />);
+
+    // Assert
+    cut.MarkupMatches(
+      @<header>
+        <h3>The Tool</h3>
+      </header>);
+  }
+
+}

@@ -27,10 +27,10 @@
   public string ButtonText { get; set; } = "Submit Color";
 
   [Parameter]
-  public EventCallback<INewColor> OnSubmitColor { get; set; }
+  public EventCallback<NewColor> OnSubmitColor { get; set; }
 
-  private async void submitColor() {
-    await OnSubmitColor.InvokeAsync(new NewColor()
+  private async Task submitColor() {
+    await OnSubmitColor.InvokeAsync(new NewColor
       {
         Name = colorForm.Name,
         HexCode = colorForm.HexCode,

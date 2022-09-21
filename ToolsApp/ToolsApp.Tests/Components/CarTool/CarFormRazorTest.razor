@@ -1,0 +1,54 @@
+﻿@inherits TestContext
+
+@using Moq
+
+@using ToolsApp.Components.CarTool
+@using ToolsApp.Models;
+@using FluentAssertions;
+
+@code {
+  NewCar car = new Car {
+    Make="Ford",
+    Model="Fusion Hybrid",
+    Year= 2020,
+    Color="blue",
+    Price=45000.0M
+  };
+
+  [Fact]
+  public void CarFormSubmitButtonOutput()
+  {
+    // Arrange
+    var submitCarFormActionMock = Mock.Of<Action<NewCar>>();
+    var cut = Render(@<CarForm ButtonText="Add Car"
+      OnSubmitForm="submitCarFormActionMock" />);
+
+    // Act
+
+    var makeInputElement = cut.Find("label:nth-of-type(1) input");
+    makeInputElement.Change(car.Make);
+
+    var modelInputElement = cut.Find("label:nth-of-type(2) input");
+    modelInputElement.Change(car.Model);
+
+    var yearInputElement = cut.Find("label:nth-of-type(3) input");
+    yearInputElement.Change(car.Year.ToString());
+
+    var colorInputElement = cut.Find("label:nth-of-type(4) input");
+    colorInputElement.Change(car.Color);
+
+    var priceInputElement = cut.Find("label:nth-of-type(5) input");
+    priceInputElement.Change(car.Price.ToString());
+
+
+    var formElement = cut.Find("form");
+
+    formElement.Submit();
+
+    // Assert
+    Mock.Get(submitCarFormActionMock).Verify(
+      mock => mock(It.Is<NewCar>(arg =>
+        arg.Make == car.Make || arg.Model == car.Model)), Times.Once());
+  }
+
+}

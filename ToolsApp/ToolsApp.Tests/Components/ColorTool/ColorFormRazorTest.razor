@@ -1,0 +1,40 @@
+@inherits TestContext
+
+@using Moq
+
+@using ToolsApp.Components.ColorTool
+@using ToolsApp.Models;
+
+@code {
+
+
+  NewColor color = new NewColor { Name="red", HexCode="ff0000" };
+
+  [Fact]
+  public void ColorFormSubmitButtonOutput()
+  {
+    // Arrange
+    var submitColorFormActionMock = Mock.Of<Action<NewColor>>();
+      
+    var cut = Render(
+      @<ColorForm ButtonText="Add Color" OnSubmitColor="@submitColorFormActionMock" />
+    );
+
+    // Act
+
+    var nameInputElement = cut.Find("label:nth-of-type(1) input");
+    nameInputElement.Change(color.Name);
+
+    var hexcodeInputElement = cut.Find("label:nth-of-type(2) input");
+    hexcodeInputElement.Change(color.HexCode);
+
+    var formElement = cut.Find("form");
+
+    formElement.Submit();
+
+    // Assert
+    Mock.Get(submitColorFormActionMock)
+      .Verify(mock => mock(It.Is<NewColor>(arg => arg.Name == color.Name)), Times.Once());
+  }
+
+}
