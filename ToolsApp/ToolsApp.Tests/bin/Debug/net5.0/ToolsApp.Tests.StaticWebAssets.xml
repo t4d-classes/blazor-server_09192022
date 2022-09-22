@@ -1,6 +1,0 @@
-﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication" Path="/Users/ericwgreene/.nuget/packages/microsoft.aspnetcore.components.webassembly.authentication/5.0.0/build/../staticwebassets/" />
-  <ContentRoot BasePath="_content/ToolsApp.Components" Path="/Users/ericwgreene/git/github.com/t4d-classes/blazor-server_05232022/ToolsAppComplete/ToolsApp.Components/obj/Debug/net5.0/scopedcss/projectbundle/" />
-  <ContentRoot BasePath="_content/ToolsApp.Components" Path="/Users/ericwgreene/git/github.com/t4d-classes/blazor-server_05232022/ToolsAppComplete/ToolsApp.Components/wwwroot/" />
-  <ContentRoot BasePath="/" Path="/Users/ericwgreene/git/github.com/t4d-classes/blazor-server_05232022/ToolsAppComplete/ToolsApp.Tests/obj/Debug/net5.0/scopedcss/bundle/" />
-</StaticWebAssets>
