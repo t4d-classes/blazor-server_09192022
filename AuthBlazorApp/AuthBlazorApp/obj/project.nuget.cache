@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "OpXilwquUhMXdVLaUt1ne4JnB7RUrZtG1fA3U4KpyYc7P7VcEOnQ5LxHb8MrjmVId+Pdq+yyHSjoQYPP5rkTCw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\EricGreene\\git\\blazor-server_09192022\\AuthBlazorApp\\AuthBlazorApp\\AuthBlazorApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EricGreene\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.9\\microsoft.aspnetcore.authentication.negotiate.6.0.9.nupkg.sha512",
+    "C:\\Users\\EricGreene\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.9\\microsoft.aspnetcore.connections.abstractions.6.0.9.nupkg.sha512",
+    "C:\\Users\\EricGreene\\.nuget\\packages\\microsoft.extensions.features\\6.0.9\\microsoft.extensions.features.6.0.9.nupkg.sha512",
+    "C:\\Users\\EricGreene\\.nuget\\packages\\system.directoryservices.protocols\\6.0.1\\system.directoryservices.protocols.6.0.1.nupkg.sha512",
+    "C:\\Users\\EricGreene\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

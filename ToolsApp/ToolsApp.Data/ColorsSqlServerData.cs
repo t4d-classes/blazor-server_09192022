@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.JSInterop;
 
 using AutoMapper;
 using Dapper;
@@ -28,6 +29,7 @@ public class ColorsSqlServerData : IColorsData
     _mapper = mapperConfig.CreateMapper();
   }
 
+  [JSInvokable]
   public async Task<IEnumerable<IColor>> All()
   {
     using var con = _dataContext.CreateConnection();

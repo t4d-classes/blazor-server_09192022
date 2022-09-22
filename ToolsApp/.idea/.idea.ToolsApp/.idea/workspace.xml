@@ -2,12 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a1284ad-e1e4-407e-9634-b3345b132ccf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Core/Interfaces/Web/IScreenBlocker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/Sample.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Web/Services/ScreenBlocker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToolsApp.Web/wwwroot/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ToolsApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ToolsApp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.metadata.v5.1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.metadata.v5.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.projects.v5.1" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/toolsapp.projects.v5.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ToolsApp/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/FileContentIndex/4a14f91e-5431-4051-92eb-99bb4af9b82e.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/FileContentIndex/85d013f9-3244-45dd-97b2-6fe9a74eba48.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/FileContentIndex/ce804b37-0166-4e8a-a58b-fab3967b5a30.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/FileContentIndex/eba6e58c-f166-4134-b0ef-cd2b91de4eaa.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/v17/.futdcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ToolsApp/v17/.futdcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ToolsApp/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ToolsApp/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/ColorTool/ColorForm.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/ColorTool/ColorForm.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Components/ColorTool/ColorList.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Components/ColorTool/ColorList.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Data/ColorsSqlServerData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Data/ColorsSqlServerData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Data/ToolsApp.Data.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Data/ToolsApp.Data.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Tests/Components/CarTool/CarViewRowRazorTest.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Tests/Components/CarTool/CarViewRowRazorTest.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Tests/Components/Shared/ToolHeaderRazorTest.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Tests/Components/Shared/ToolHeaderRazorTest.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/ColorTool.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/ColorTool.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/Index.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Pages/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Pages/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.Web/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.Web/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToolsApp.sln" beforeDir="false" afterPath="$PROJECT_DIR$/ToolsApp.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -20,16 +52,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "RiderNuGetOptionsPageId",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ToolsApp.Web">
     <configuration name="ToolsApp.Web" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ToolsApp.Web/ToolsApp.Web.csproj" />
@@ -75,6 +107,7 @@
       <workItem from="1663767473810" duration="7432000" />
       <workItem from="1663791824614" duration="682000" />
       <workItem from="1663796717676" duration="3042000" />
+      <workItem from="1663854860010" duration="15143000" />
     </task>
     <servers />
   </component>
@@ -93,6 +126,25 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ToolsApp.Web/Program.cs</url>
+          <line>23</line>
+          <properties documentPath="C:\Users\EricGreene\git\blazor-server_09192022\ToolsApp\ToolsApp.Web\Program.cs" initialLine="22" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="845" />
+            </startOffsets>
+            <endOffsets>
+              <option value="871" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

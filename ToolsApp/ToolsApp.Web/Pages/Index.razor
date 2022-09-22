@@ -8,10 +8,16 @@ Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
 
+<ul>
+  <li><a href="/sample/1">Sample 1</a></li>
+  <li><a href="/sample/2">Sample 2</a></li>
+  <li><a href="/sample/3?detailLevel=5">Sample 3</a></li>
+</ul>
+
 <button @onclick="@ShowModal">Show Modal</button>
 
 <Modal @bind-DialogVisible="@DialogVisible">
-  Hello!
+  <p>Hello!</p>
 </Modal>
 
 @code {

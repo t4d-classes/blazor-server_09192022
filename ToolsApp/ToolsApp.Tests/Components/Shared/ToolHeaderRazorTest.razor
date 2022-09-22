@@ -15,5 +15,21 @@
         <h3>The Tool</h3>
       </header>);
   }
+  
+  [Fact]
+  public void ColorToolHeaderComponentRendersCorrectly()
+  {
+    // Arrange
+    using var ctx = new TestContext();
+
+    // Act
+    var cut = ctx.Render(@<ToolHeader HeaderText="Color Tool" />);
+
+    // Assert
+    cut.MarkupMatches(
+      @<header>
+        <h3>Color Tool</h3>
+      </header>);
+  }  
 
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsApp.Components", "Tool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsApp.Web", "ToolsApp.Web\ToolsApp.Web.csproj", "{3D6A3F17-366E-4B95-8E02-2874AEED82A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolsApp.Tests", "ToolsApp.Tests\ToolsApp.Tests.csproj", "{8BD58BAB-E7CC-4D52-A3B0-E8B29F945FB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3D6A3F17-366E-4B95-8E02-2874AEED82A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D6A3F17-366E-4B95-8E02-2874AEED82A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D6A3F17-366E-4B95-8E02-2874AEED82A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD58BAB-E7CC-4D52-A3B0-E8B29F945FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD58BAB-E7CC-4D52-A3B0-E8B29F945FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD58BAB-E7CC-4D52-A3B0-E8B29F945FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD58BAB-E7CC-4D52-A3B0-E8B29F945FB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

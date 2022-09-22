@@ -1,28 +1,65 @@
 ﻿@page "/color-tool"
 
 @using ToolsApp.Core.Interfaces.Data
+@using ToolsApp.Core.Interfaces.Web
 
+@inject IJSRuntime JS
 @inject IColorsData colorsData
+@inject IScreenBlocker ScreenBlocker
 
 <ToolHeader HeaderText="Color Tool"></ToolHeader>
-<ColorList Colors="@colors"></ColorList>
+<ColorList Colors="@colors" OnDeleteColor="@DeleteColor"></ColorList>
 <ColorForm ButtonText="Add Color" OnSubmitColor="@AddColor"></ColorForm>
-
-
 
 @code {
 
+  private bool _firstRender = true;
+
   public IEnumerable<IColor> colors { get; set; } = new List<IColor>();
 
-  protected override async Task OnInitializedAsync()
+  private DotNetObjectReference<IColorsData> colorsDataRef;
+
+  protected override async Task OnParametersSetAsync()
   {
+    if (!_firstRender)
+    {
+      await RefreshColors();
+    }
+  }
+
+  protected override async Task OnAfterRenderAsync(bool firstRender)
+  {
+    colorsDataRef = DotNetObjectReference.Create(colorsData);
+
+    if (firstRender)
+    {
+      await JS.InvokeVoidAsync("app.setupColorsRefresh", colorsDataRef);
+      await RefreshColors();
+      StateHasChanged();
+    }
+  }
+
+  public async Task RefreshColors()
+  {
+    await ScreenBlocker.BlockScreen();
     colors = await colorsData.All();
+    await Task.Delay(1000);
+    await ScreenBlocker.UnblockScreen();
   }
 
   public async Task AddColor(INewColor newColor)
   {
     await colorsData.Append(newColor);
-    colors = await colorsData.All();
+    await RefreshColors();
+  }
+
+  public async Task DeleteColor(int colorId)
+  {
+    if (await JS.InvokeAsync<bool>("confirm", "Are you sure you want to delete the color?"))
+    {
+      await colorsData.Remove(colorId);
+      await RefreshColors();
+    }
   }
 
 }

@@ -1,0 +1,129 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AuthBlazorApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Negotiate": "6.0.9"
+        },
+        "runtime": {
+          "AuthBlazorApp.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Negotiate/6.0.9": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "6.0.9",
+          "System.DirectoryServices.Protocols": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Negotiate.dll": {
+            "assemblyVersion": "6.0.9.0",
+            "fileVersion": "6.0.922.41926"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Connections.Abstractions/6.0.9": {
+        "dependencies": {
+          "Microsoft.Extensions.Features": "6.0.9",
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.922.41926"
+          }
+        }
+      },
+      "Microsoft.Extensions.Features/6.0.9": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Features.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.922.41926"
+          }
+        }
+      },
+      "System.DirectoryServices.Protocols/6.0.1": {
+        "runtime": {
+          "lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "assemblyVersion": "6.0.0.1",
+            "fileVersion": "6.0.222.6406"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.1",
+            "fileVersion": "6.0.222.6406"
+          },
+          "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.1",
+            "fileVersion": "6.0.222.6406"
+          },
+          "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.1",
+            "fileVersion": "6.0.222.6406"
+          }
+        }
+      },
+      "System.IO.Pipelines/6.0.3": {
+        "runtime": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21309"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AuthBlazorApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Authentication.Negotiate/6.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m6NzfxKeYZWcdkJlzv/x9ZLeLx56Y8DVWk658Cay4Flexhri+jDTTaajmDJj2ZyYtAl0KAqT9GJX9FZ5aFCMzw==",
+      "path": "microsoft.aspnetcore.authentication.negotiate/6.0.9",
+      "hashPath": "microsoft.aspnetcore.authentication.negotiate.6.0.9.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Connections.Abstractions/6.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-45fg/Le6B0ErVDU2KIIdvO+NVcweHbywIyyCOz4NOFZMJ1NOznOuW2dSYGb8D4FI2GNlEk7/Za0351wMZqhNYw==",
+      "path": "microsoft.aspnetcore.connections.abstractions/6.0.9",
+      "hashPath": "microsoft.aspnetcore.connections.abstractions.6.0.9.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Features/6.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BB+I1mpsgb+j/zlJ2ynEWi3RmuFjtD5QpVu45ZaPk4m6piHFIp2i+Wv2Kf2Lb+MRnNIDgThv11fjiAe67zS2Ag==",
+      "path": "microsoft.extensions.features/6.0.9",
+      "hashPath": "microsoft.extensions.features.6.0.9.nupkg.sha512"
+    },
+    "System.DirectoryServices.Protocols/6.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ndUZlEkAMc1XzM0xGN++SsJrNhRkIHaKI8+te325vrUgoLT1ufWNI6KB8FFrL7NpRMHPrdxP99aF3fHbAPxW0A==",
+      "path": "system.directoryservices.protocols/6.0.1",
+      "hashPath": "system.directoryservices.protocols.6.0.1.nupkg.sha512"
+    },
+    "System.IO.Pipelines/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
+      "path": "system.io.pipelines/6.0.3",
+      "hashPath": "system.io.pipelines.6.0.3.nupkg.sha512"
+    }
+  }
+}

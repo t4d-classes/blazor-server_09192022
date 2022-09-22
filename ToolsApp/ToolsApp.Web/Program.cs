@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using ToolsApp.Core.Interfaces.Data;
+using ToolsApp.Core.Interfaces.Web;
 using ToolsApp.Data;
 using ToolsApp.Web.Data;
+using ToolsApp.Web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,8 @@ builder.Services.AddScoped<IColorsData, ColorsSqlServerData>();
 // builder.Services.AddScoped<IColorsData, ColorsInMemoryData>();
 builder.Services.AddScoped<ICarsData, CarsSqlServerData>();
 // builder.Services.AddScoped<ICarsData, CarsInMemoryData>();
+
+builder.Services.AddScoped<IScreenBlocker, ScreenBlocker>();
 
 var app = builder.Build();
 

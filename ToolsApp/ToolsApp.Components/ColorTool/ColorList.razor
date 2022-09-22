@@ -4,6 +4,7 @@
     <li>
       @color.Name - @color.HexCode
       <button @onclick="@(() => SelectMe(color.Id))">Select Me</button>
+      <button @onclick="@(async () => await OnDeleteColor.InvokeAsync(color.Id))">Delete</button>
     </li>
   }
 </ul>
@@ -22,6 +23,9 @@
 
   [Parameter]
   public IEnumerable<IColor> Colors { get; set; } = new List<IColor>();
+  
+  [Parameter]
+  public EventCallback<int> OnDeleteColor { get; set; }
 
   private void SelectMe(int colorId)
   {

@@ -1,0 +1,59 @@
+@page "/sample/{ProductId:int}"
+
+@using Microsoft.Extensions.Logging
+
+@implements IDisposable
+
+@inject ILogger<Sample> Logger
+@inject NavigationManager NavigationManager;
+
+<h3>Sample</h3>
+
+<ul>
+  <li><a href="/sample/1">Sample 1</a></li>
+  <li><a href="/sample/2">Sample 2</a></li>
+  <li><a href="/sample/3?detailLevel=5">Sample 3</a></li>
+</ul>
+
+<article>
+    Product Id: @ProductId
+    Detail Level: @DetailLevel
+</article>
+
+<div></div>
+
+<simple-greeting></simple-greeting>
+
+<button @onclick="@GoHome">Go Home</button>
+
+@code {
+    
+    [Parameter]
+    public int ProductId { get; set; }
+    
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public int? DetailLevel { get; set; }
+
+    private void GoHome()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+
+    protected override void OnInitialized()
+    {
+        Logger.LogInformation("Sample Initialized");
+        NavigationManager.LocationChanged += HandleLocationChanged;
+    }
+
+    private void HandleLocationChanged(object sender, LocationChangedEventArgs e)
+    {
+        Logger.LogInformation("URL of new location: {Location}", e.Location);
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= HandleLocationChanged;
+    }
+    
+}
